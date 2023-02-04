@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -79,4 +80,17 @@ public class Main {
 
 
     }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        float weightBanana = 80.0F;
+        float weightMilk = 105.0F;
+        float weightIceCream = 100.0F;
+        float weightEgg = 70.0F;
+        float weightBreakfast = weightBanana * 5 + weightMilk * 2 + weightEgg * 4 + weightIceCream * 2;
+        float weightBreakfast2 = weightBreakfast / 1000;
+        System.out.println("Вес завтрака составит " + weightBreakfast + " грамм или " + weightBreakfast2 + " кг");
+
+    }
+
 }

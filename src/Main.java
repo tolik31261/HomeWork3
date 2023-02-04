@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -92,5 +93,22 @@ public class Main {
         System.out.println("Вес завтрака составит " + weightBreakfast + " грамм или " + weightBreakfast2 + " кг");
 
     }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        short lossWeight1 = 250;
+        short lossWeight2 = 500;
+        byte allLossWeightKg = 7;
+        int allLossWeightG = allLossWeightKg * 1000;
+        System.out.println("Всего нужно похудеть на " + allLossWeightG + " грамм");
+        int dayLossWeight1 = allLossWeightG / lossWeight1;
+        System.out.println(dayLossWeight1 + " дней уйдет, если спортсмен будет терять по " + lossWeight1 + " грамм");
+        int dayLossWeight2 = allLossWeightG / lossWeight2;
+        System.out.println(dayLossWeight2 + " дней уйдет, если спортсмен будет терять по " + lossWeight2 + " грамм");
+        int dayAverageWeightLoss = (dayLossWeight1 + dayLossWeight2) / 2;
+        System.out.println("В среднем понадобится " + dayAverageWeightLoss + " день для похудения");
+
+    }
+
 
 }

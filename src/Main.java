@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -107,6 +108,33 @@ public class Main {
         System.out.println(dayLossWeight2 + " дней уйдет, если спортсмен будет терять по " + lossWeight2 + " грамм");
         int dayAverageWeightLoss = (dayLossWeight1 + dayLossWeight2) / 2;
         System.out.println("В среднем понадобится " + dayAverageWeightLoss + " день для похудения");
+
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int mashaCashBefore = 67760;
+        int denisCashBefore = 83690;
+        int kristinaCashBefore = 76230;
+        float upCash = 1.1F;
+        float mashaCashAfter = mashaCashBefore * upCash;
+        float mashaCashYearAfter = mashaCashAfter * 12;
+        float mashaCashYearBefore = mashaCashBefore * 12;
+        float mashaCashMore = mashaCashYearAfter - mashaCashYearBefore;
+        System.out.println("Маша теперь получает " + mashaCashAfter + " рублей. Годовой доход вырос на " + mashaCashMore + " рублей");
+        float denisCashAfter = denisCashBefore * upCash;
+        float denisCashYearAfter = denisCashAfter * 12;
+        float denisCashYearBefore = denisCashBefore * 12;
+        float denisCashYearMore = denisCashYearAfter - denisCashYearBefore;
+        System.out.println("Денис теперь получает " + denisCashAfter + " рублей. Годовой доход вырос на " + denisCashYearMore + " рублей");
+        float kristinaCashAfter = kristinaCashBefore * upCash;
+        float kristinaCashYearAfter = kristinaCashAfter * 12;
+        float kristinaCashYearBefore = kristinaCashBefore * 12;
+        float kristinaCashYearMore = kristinaCashYearAfter - kristinaCashYearBefore;
+        System.out.println("Кристина теперь получает " + kristinaCashAfter + " рублей. Годовой доход вырос на " + kristinaCashYearMore + " рублей");
+
+
+
 
     }
 
